@@ -1,11 +1,5 @@
-'''Crie uma função que receba um número inteiro e mostre 
-True se ele for par e False, caso contrário.
-'''
+#Pedir um número ao usuário
+numero = float(input("Digite um número: "))
 
-def e_par(n):
-    if n % 2 == 0:
-        print(True)
-    else:
-        print(False)
-
-e_par(3)
+#mostrar mensagem "O número informado foi"
+print(f"O número informado foi: {numero} ")
