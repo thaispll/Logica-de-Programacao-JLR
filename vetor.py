@@ -21,6 +21,11 @@ vetor.remove("b")
 del vetor[2]
 #print(vetor)
 
+#Remove elemento pela posição
+frutas = ["Morango", "Maçã", "Banana", "Pêra" , "Kiwi", "Pitaya", "Jaca"]
+frutas.pop(2)
+print(frutas)
+
 #Atualizar elementos
 #atribui um novo valor para a posição específica
 vetor[0] = "JLR"
@@ -59,4 +64,5 @@ vetor_numerico = [1,2,3,4]
 for i in range(len(vetor_numerico)):
     vetor_numerico[i] *=2 #vetor_numerico[i] = vetor_numerico[2] *2
 print(vetor_numerico)
+
 
