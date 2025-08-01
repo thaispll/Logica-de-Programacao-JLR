@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #print = escreva
 print("Hello, World!")
 
@@ -5,3 +6,6 @@ print("Hello, World!")
 
 nome = "Thais Leal"
 
+=======
+print("OLÁ, MUNDO")
+>>>>>>> 0f2ccc8 (Primeiro commit)
