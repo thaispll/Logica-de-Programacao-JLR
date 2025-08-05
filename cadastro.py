@@ -1,13 +1,33 @@
-'''Faça um programa que leia um nome de usuário e a sua senha e não 
-aceite a senha igual ao nome do usuário, mostrando uma mensagem de 
-erro e voltando a pedir as informações.'''
+class Usuario:
+    def __init__(self, nome, email):
+        self.__nome = nome
+        self.__email = email
+    
+    def get_nome(self): #permite acessar atributo 
+        return self.__nome
+    
+    def set_nome(self,nome): #permite modificar atributo
+        if nome.strip(): #remove espaço no inicio e no fim
+            self.__nome = nome
+        else:
+            print("Nome inválido")
+    
+    def get_email(self):
+        return self.__email
+    
+    def set_email(self, email):
+        if "@" in email and "." in email:
+            self.__email=email
+        else:
+            print("Email inválido")
 
-while True:
-    usuario = input("Digite o nome de usuário: ")
-    senha = input("Digite a senha: ")
+usuario = Usuario("Carlos", "carlos@email.com")
+print(usuario.get_nome())
 
-    if senha.lower() == usuario.lower():
-        print("Erro: a senha não pode ser igual ao nome do usuário.Tente novamente. \n")
-    else:
-        print("Cadastro realizado com sucesso!")
-        break 
+usuario.set_nome("Carlos André")
+print(usuario.get_nome())
+
+usuario.set_email("email errado")
+print(usuario.get_email())
+    
+
